@@ -1,8 +1,8 @@
 -   id: kustomize
     name: kustomize (via docker)
     description: kustomize
-    entry: kustomize build --enable-alpha-plugins --enable-exec
+    entry: run.sh
     language: docker
-    args: [deploy/kustomize/overlay/dev]
+    args: [clusters/nonprod/overlays/dev]
     always_run: true
     pass_filenames: false
